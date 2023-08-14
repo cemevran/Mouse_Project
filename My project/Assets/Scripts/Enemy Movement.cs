@@ -16,7 +16,7 @@ public class EnemyMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Border" || transform.position.magnitude >= 4)
+        if (collision.gameObject.tag == "Border")
             changeDir = true;
     }
 
